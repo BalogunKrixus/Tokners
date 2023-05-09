@@ -1,0 +1,853 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+html, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --green-color: #22A75D;
+  --blue-color: #2278D4;
+  --yellow-color: #FFD100;
+  --red-color: #E20613;
+}
+
+@font-face {
+  font-family: "Century Gothic Bold";
+  src: url(/fonts/SansSerifBldFLF.otf);
+}
+@font-face {
+  font-family: "Century Gothic Regular";
+  src: url(/fonts/SansSerifBookFLF.otf);
+}
+h2 {
+  font-family: "Century Gothic Bold", sans-serif;
+  font-size: 3.6rem;
+  line-height: 4rem;
+}
+
+h3 {
+  font-family: "Century Gothic Bold", sans-serif;
+  font-size: 2.8rem;
+}
+
+h4 {
+  font-family: "Century Gothic Bold", sans-serif;
+  font-size: 3.2rem;
+}
+
+body {
+  font-family: "Century Gothic Regular", sans-serif;
+  font-size: 1.4rem;
+}
+body::before {
+  position: absolute;
+  content: "";
+  background: url(/Images/Hero-background-overlay.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  z-index: -1;
+  top: 0;
+  opacity: 70%;
+  -webkit-backdrop-filter: blur(150px);
+          backdrop-filter: blur(150px);
+}
+
+body {
+  background: #0F1320;
+  color: white;
+  margin: 0;
+}
+body a {
+  cursor: pointer;
+}
+body .primary-cta {
+  color: white;
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  border-radius: 5.2em;
+  border: 1px solid var(--green-color);
+}
+body .secondary-cta {
+  color: white;
+  background: var(--green-color);
+  padding: 1.5rem 3rem;
+  border-radius: 5.2em;
+  text-decoration: none;
+  font-family: "century Gothic Bold";
+  filter: drop-shadow(0px 15px 25px rgba(34, 167, 93, 0.19));
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 2rem;
+}
+header a img {
+  width: 155px;
+}
+header nav {
+  display: none;
+}
+
+/* Main */
+main {
+  margin-top: 5.6em;
+}
+main .left-col {
+  margin: 0 2rem;
+}
+main .left-col .sub-head {
+  font-family: "Century Gothic Bold";
+  background: linear-gradient(to right, #00B4EC, #2B3087);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: 0 0 1rem;
+}
+main .left-col p {
+  line-height: 2.2rem;
+  color: #DDE2FF;
+  margin: 2rem auto 3rem;
+}
+main .left-col a {
+  display: inline-block;
+}
+main img {
+  width: 100%;
+}
+
+/* Benefits */
+.benefits {
+  margin: 4rem 2rem 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.benefits .benefits-card {
+  background: #171B29;
+  padding: 3em 3em 4em;
+  border-radius: 2.5em;
+}
+.benefits .benefits-card .content h3 {
+  margin: 1rem 0;
+  line-height: 5.4rem;
+}
+.benefits .benefits-card .content p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #fff;
+  opacity: 0.5;
+  margin-bottom: 2rem;
+}
+.benefits .benefits-card .content .cta {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.6rem;
+}
+.benefits .benefits-card .content .cta svg {
+  width: 16px;
+  height: 16px;
+}
+.benefits .benefits-card .content .cta a {
+  font-family: "Century Gothic Bold";
+}
+.benefits .for-creators img {
+  filter: drop-shadow(0px 15px 25px rgba(34, 167, 93, 0.25));
+}
+.benefits .for-creators h3 span {
+  color: var(--green-color);
+  text-decoration: underline;
+}
+.benefits .for-creators .cta a {
+  color: var(--green-color);
+}
+.benefits .for-holders img {
+  filter: drop-shadow(0px 15px 25px rgba(34, 120, 212, 0.25));
+}
+.benefits .for-holders h3 span {
+  color: var(--blue-color);
+  text-decoration: underline;
+}
+.benefits .for-holders .cta a {
+  color: var(--blue-color);
+}
+
+.What-makes-us-different img {
+  width: 100%;
+  transform: scaleX(-1);
+}
+.What-makes-us-different section {
+  background: white;
+  color: #0F1320;
+  padding: 7rem 2rem;
+  border-radius: 0 16rem 0 0;
+}
+.What-makes-us-different section .sub-head {
+  margin: 3rem 0 2rem;
+  line-height: 2em;
+  font-family: "Century Gothic Bold";
+  opacity: 0.6;
+}
+.What-makes-us-different section p {
+  line-height: 2.4em;
+  opacity: 0.6;
+}
+
+.company-info {
+  padding: 7rem 2rem;
+}
+.company-info .quaters {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-bottom: 7rem;
+}
+.company-info .quaters .quater .title {
+  display: flex;
+  gap: 1rem;
+  align-items: end;
+  margin-bottom: 3rem;
+}
+.company-info .quaters .quater .title p {
+  font-family: "Century Gothic Bold";
+  font-size: 1.8rem;
+  line-height: 3.6rem;
+  bottom: -20;
+}
+.company-info .quaters .quater p {
+  margin: 1rem 0 2rem;
+}
+.company-info .quaters .quater1 .title p {
+  position: relative;
+}
+.company-info .quaters .quater1 .title p::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: var(--green-color);
+  border-radius: 100%;
+  top: -10;
+}
+.company-info .quaters .quater1 p span {
+  color: var(--green-color);
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  font-family: "Century Gothic Bold";
+}
+.company-info .quaters .quater2 .title p {
+  position: relative;
+}
+.company-info .quaters .quater2 .title p::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: var(--blue-color);
+  border-radius: 100%;
+  top: -10;
+}
+.company-info .quaters .quater2 p span {
+  color: var(--blue-color);
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  font-family: "Century Gothic Bold";
+}
+.company-info .quaters .quater3 .title p {
+  position: relative;
+}
+.company-info .quaters .quater3 .title p::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: var(--yellow-color);
+  border-radius: 100%;
+  top: -10;
+}
+.company-info .quaters .quater3 p span {
+  color: var(--yellow-color);
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  font-family: "Century Gothic Bold";
+}
+.company-info .quaters .quater4 .title p {
+  position: relative;
+}
+.company-info .quaters .quater4 .title p::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: var(--red-color);
+  border-radius: 100%;
+  top: -10;
+}
+.company-info .quaters .quater4 p span {
+  color: var(--red-color);
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  font-family: "Century Gothic Bold";
+}
+
+.Tokner-is-coming {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+.Tokner-is-coming .left-col .title img {
+  margin-bottom: 1rem;
+}
+.Tokner-is-coming .left-col .title h2 {
+  line-height: 5.4rem;
+}
+.Tokner-is-coming .left-col p {
+  color: white;
+  opacity: 0.6;
+  line-height: 2.4rem;
+}
+.Tokner-is-coming .left-col p span {
+  font-family: "Century Gothic Bold";
+}
+.Tokner-is-coming .left-col a {
+  display: inline-block;
+  margin-top: 2rem;
+}
+.Tokner-is-coming img {
+  order: -1;
+  margin-bottom: 7rem;
+}
+
+/*presale details*/
+.presale-details {
+  background: url(/Images/Presale\ Details\ Background.png) no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  padding: 10.5rem 0;
+  text-align: center;
+}
+.presale-details h2 {
+  line-height: 5.4rem;
+  margin-bottom: 1.7rem;
+}
+.presale-details .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 2rem;
+}
+.presale-details .cards .card1 {
+  position: relative;
+}
+.presale-details .cards .card1 img {
+  filter: drop-shadow(0px 15px 25px rgba(34, 167, 93, 0.25));
+}
+.presale-details .cards .card1::before {
+  position: absolute;
+  content: "";
+  background: url(/Images/01.svg) no-repeat;
+  width: 189.32px;
+  height: 135.79px;
+  background-size: contain;
+  top: 60;
+}
+.presale-details .cards .card2 {
+  position: relative;
+}
+.presale-details .cards .card2 img {
+  filter: drop-shadow(0px 15px 25px rgba(34, 120, 212, 0.25));
+}
+.presale-details .cards .card2::before {
+  position: absolute;
+  content: "";
+  background: url(/Images/02.svg) no-repeat;
+  width: 189.32px;
+  height: 135.79px;
+  background-size: contain;
+  top: 60;
+}
+.presale-details .cards .card3 {
+  position: relative;
+}
+.presale-details .cards .card3 img {
+  filter: drop-shadow(0px 15px 25px rgba(255, 209, 0, 0.25));
+}
+.presale-details .cards .card3::before {
+  position: absolute;
+  content: "";
+  background: url(/Images/03.svg) no-repeat;
+  width: 189.32px;
+  height: 135.79px;
+  background-size: contain;
+  top: 60;
+}
+.presale-details .phase-card {
+  margin: 0 10px;
+  padding: 7.3rem 0 5.4rem;
+  background: white;
+  border-radius: 2.5rem;
+  color: #191B21;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.presale-details .phase-card h4, .presale-details .phase-card p {
+  text-align: center;
+}
+.presale-details .phase-card img {
+  width: 82px;
+  margin-bottom: 2.8rem;
+}
+.presale-details .phase-card .title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 4rem;
+}
+.presale-details .phase-card .title h4 {
+  line-height: 5.4rem;
+}
+.presale-details .phase-card .title p {
+  line-height: 2rem;
+  font-family: "Century Gothic Bold";
+}
+.presale-details .phase-card .content {
+  font-family: "Century Gothic Bold";
+  font-size: 2rem;
+}
+.presale-details .phase-card .content .bnb {
+  margin-bottom: 2rem;
+}
+.presale-details .phase-card .content .cap-value {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: "Century Gothic Regular";
+  font-size: 1.6rem;
+}
+.presale-details .phase-card .content .cap-value span {
+  font-family: "Century Gothic Bold";
+}
+
+.lower-section section {
+  margin: 0 2rem;
+  text-align: center;
+}
+.lower-section section h2 {
+  line-height: 5.4rem;
+  margin-bottom: 2rem;
+}
+.lower-section section .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 6.4rem;
+}
+.lower-section section .cards .card1 {
+  position: relative;
+}
+.lower-section section .cards .card1::before {
+  position: absolute;
+  content: "";
+  background: url(/Images/Green\ arrow\ in\ circle.svg);
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  bottom: -35;
+  z-index: 1;
+  transform: rotate(90deg);
+  align-self: center;
+}
+.lower-section section .cards .card2 {
+  position: relative;
+}
+.lower-section section .cards .card2::after {
+  position: absolute;
+  content: "";
+  background: url(/Images/yellow\ arrow\ in\ circle.svg);
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  bottom: -35;
+  transform: rotate(90deg);
+  z-index: 1;
+  align-self: center;
+}
+.lower-section section .card {
+  text-align: left;
+  padding: 5rem 3.8rem;
+  background: #171B29;
+  border-radius: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.8rem;
+  font-family: "Century Gothic Bold";
+  line-height: 2.4rem;
+}
+.lower-section section .card .number {
+  font-family: "Century Gothic Regular";
+  font-size: 1.2rem;
+  opacity: 0.3;
+}
+.lower-section section .quick-links {
+  display: none;
+}
+.lower-section section .footer-base a img {
+  width: 207px;
+  margin-bottom: 3.3rem;
+}
+.lower-section section .footer-base .social-media-links {
+  display: flex;
+  gap: 0.96rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.2rem;
+}
+.lower-section section .all-rights-reserved div {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 4rem;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+.mobile-menu {
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  background: #171B29;
+  width: 66%;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  padding: 1em;
+}
+nav .mobile-menu-exit {
+  float: right;
+  margin: 1rem;
+  cursor: pointer;
+  display: block;
+}
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+nav ul.secondary-nav {
+  padding: 0;
+}
+nav .primary-cta {
+  float: right;
+  margin-top: 1em;
+}
+nav .primary-cta a {
+  padding: 0;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  display: block;
+  padding: 1em;
+  text-align: right;
+}
+nav ul li a:hover {
+  font-family: "Century Gothic Bold";
+}
+
+@media only screen and (min-width: 1080px) {
+  section {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  header {
+    gap: 8rem;
+    align-items: center;
+  }
+  header .mobile-menu {
+    display: none;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: unset;
+    width: 100%;
+    padding: 0;
+    align-items: center;
+  }
+  header nav .mobile-menu-exit {
+    display: none;
+  }
+  header nav .primary-cta {
+    margin: 0;
+  }
+  header nav ul.primary-nav {
+    margin: 0;
+    display: flex;
+    padding: 0;
+  }
+  header nav ul.secondary-nav {
+    margin: 0;
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+  }
+  main {
+    position: relative;
+    min-height: calc(100vh - 120px);
+    display: flex;
+    align-items: center;
+    margin: 0 0 5.3rem;
+  }
+  main .left-col {
+    width: 45%;
+    margin: 0;
+    padding-right: 15rem;
+    padding-bottom: 20rem;
+  }
+  main img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 100%;
+  }
+  .benefits {
+    margin: auto auto 12rem;
+    flex-direction: row;
+    gap: 2em;
+  }
+  .benefits .benefits-card {
+    width: 50%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .benefits .for-holders {
+    margin-top: 9.4rem;
+  }
+  .What-makes-us-different {
+    position: relative;
+    overflow: hidden;
+  }
+  .What-makes-us-different::before {
+    position: absolute;
+    content: "";
+    background: url(/Images/what\ makes\ us\ differernt\ -\ color\ collage.png) no-repeat;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: right bottom;
+  }
+  .What-makes-us-different::after {
+    position: absolute;
+    content: "";
+    background: white;
+    padding: 7rem 2rem;
+    border-radius: 40rem 0 0 0;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -10;
+  }
+  .What-makes-us-different img {
+    display: none;
+  }
+  .What-makes-us-different section {
+    display: flex;
+    background: none;
+    color: none;
+    padding: 0;
+    border-radius: unset;
+  }
+  .What-makes-us-different section .img {
+    width: 50%;
+  }
+  .What-makes-us-different section .content {
+    width: 50%;
+    color: #0F1320;
+    padding: 29.6rem 0 13rem 14.3rem;
+    position: relative;
+  }
+  .What-makes-us-different section .content::after {
+    position: absolute;
+    content: "";
+    background: url(/Images/Weenter\ background.svg) no-repeat;
+    height: 168px;
+    width: 704px;
+    right: -60%;
+    top: 19.5%;
+  }
+  .company-info {
+    padding: 0;
+  }
+  .company-info .quaters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 21rem 0 18.7rem;
+    margin: 0;
+  }
+  .company-info .Tokner-is-coming {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    align-items: center;
+    margin: 0;
+  }
+  .company-info .Tokner-is-coming .left-col {
+    width: 50%;
+    order: -1;
+  }
+  .company-info .Tokner-is-coming .left-col .title {
+    display: flex;
+    align-items: baseline;
+    gap: 0.24rem;
+    order: 1;
+  }
+  .company-info .Tokner-is-coming .left-col .title img {
+    width: 5.27rem;
+    order: -1;
+  }
+  .company-info .Tokner-is-coming img {
+    width: 50%;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 0;
+    order: 1;
+  }
+  .presale-details {
+    background-size: contain;
+    background-size: 100% 100%;
+    padding: 40rem 0 16rem;
+    background-position: center center;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .presale-details .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .presale-details .cards .card1, .presale-details .cards .card3 {
+    align-self: flex-start;
+  }
+  .presale-details .cards .card2 {
+    margin-top: 6rem;
+  }
+  .presale-details .phase-card {
+    padding: 10.2rem 9rem 8.7rem;
+    margin: 0;
+  }
+  .lower-section {
+    position: relative;
+  }
+  .lower-section::after {
+    content: "";
+    position: absolute;
+    background: url(/Images/footer-background.png);
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    z-index: -99;
+  }
+  .lower-section section {
+    margin: 0 auto;
+  }
+  .lower-section section .cards {
+    flex-direction: row;
+    margin-bottom: 21rem;
+  }
+  .lower-section section .cards .card1::before {
+    width: 86px;
+    height: 86px;
+    bottom: 63px;
+    align-self: unset;
+    right: -50;
+    transform: unset;
+  }
+  .lower-section section .cards .card2 {
+    margin-top: 6rem;
+  }
+  .lower-section section .cards .card2::after {
+    width: 86px;
+    height: 86px;
+    bottom: -35;
+    align-self: unset;
+    transform: unset;
+    right: -50;
+    top: 6.1rem;
+  }
+  .lower-section section .card {
+    padding: 9.9rem 8.3rem;
+    display: unset;
+    position: relative;
+    align-self: flex-start;
+  }
+  .lower-section section .card .number {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+  }
+  .lower-section section .quick-links {
+    display: flex;
+    justify-content: center;
+    gap: 6.6rem;
+    margin-bottom: 12rem;
+  }
+  .lower-section section .quick-links .link {
+    display: flex;
+    gap: 7.5rem;
+    color: white;
+  }
+  .lower-section section .quick-links .link a {
+    text-decoration: underline;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Century Gothic Bold";
+  }
+  .lower-section section .quick-links .link a:hover {
+    opacity: 50%;
+  }
+  .lower-section section .footer-base {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 14.2rem;
+  }
+  .lower-section section .footer-base a img {
+    margin-bottom: 0rem;
+  }
+  .lower-section section .footer-base .social-media-links {
+    margin-bottom: 0;
+  }
+  .lower-section section .all-rights-reserved div {
+    justify-content: right;
+    opacity: 50%;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 1rem 0 0;
+  }
+}/*# sourceMappingURL=main.css.map */
