@@ -307,6 +307,7 @@ main img {
 }
 .Tokner-is-coming .left-col .title img {
   margin-bottom: 1rem;
+  width: unset;
 }
 .Tokner-is-coming .left-col .title h2 {
   line-height: 5.4rem;
@@ -326,6 +327,7 @@ main img {
 .Tokner-is-coming img {
   order: -1;
   margin-bottom: 7rem;
+  width: 100%;
 }
 
 /*presale details*/
