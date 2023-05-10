@@ -475,7 +475,7 @@ main img {
 .lower-section section .cards .card2::after {
   position: absolute;
   content: "";
-  background: url(../Images/yellow\ arrow\ in\ circle.svg);
+  background: url(../Images/Yellow\ arrow\ in\ circle.svg)
   width: 60px;
   height: 60px;
   background-size: contain;
