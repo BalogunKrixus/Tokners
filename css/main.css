@@ -21,11 +21,11 @@ html, h2, h3, h4, p {
 
 @font-face {
   font-family: "Century Gothic Bold";
-  src: url(fonts/SansSerifBldFLF.otf);
+  src: url(../fonts/SansSerifBldFLF.otf);
 }
 @font-face {
   font-family: "Century Gothic Regular";
-  src: url(fonts/SansSerifBookFLF.otf);
+  src: url(../fonts/SansSerifBookFLF.otf);
 }
 h2 {
   font-family: "Century Gothic Bold", sans-serif;
@@ -50,7 +50,7 @@ body {
 body::before {
   position: absolute;
   content: "";
-  background: url('../Images/Hero-background-overlay.png') no-repeat;
+  background: url(../Images/Hero-background-overlay.png) no-repeat;
   width: 100%;
   height: 100%;
   background-size: contain;
@@ -330,7 +330,7 @@ main img {
 
 /*presale details*/
 .presale-details {
-  background: url(Images/Presale\ Details\ Background.png) no-repeat;
+  background: url(../Images/Presale\ Details\ Background.png) no-repeat;
   width: 100%;
   background-size: cover;
   background-position: center center;
@@ -356,7 +356,7 @@ main img {
 .presale-details .cards .card1::before {
   position: absolute;
   content: "";
-  background: url(Images/01.svg) no-repeat;
+  background: url(../Images/01.svg) no-repeat;
   width: 189.32px;
   height: 135.79px;
   background-size: contain;
@@ -371,7 +371,7 @@ main img {
 .presale-details .cards .card2::before {
   position: absolute;
   content: "";
-  background: url(Images/02.svg) no-repeat;
+  background: url(../Images/02.svg) no-repeat;
   width: 189.32px;
   height: 135.79px;
   background-size: contain;
@@ -386,7 +386,7 @@ main img {
 .presale-details .cards .card3::before {
   position: absolute;
   content: "";
-  background: url(Images/03.svg) no-repeat;
+  background: url(../Images/03.svg) no-repeat;
   width: 189.32px;
   height: 135.79px;
   background-size: contain;
@@ -460,7 +460,7 @@ main img {
 .lower-section section .cards .card1::before {
   position: absolute;
   content: "";
-  background: url(Images/Green\ arrow\ in\ circle.svg);
+  background: url(../Images/Green\ arrow\ in\ circle.svg);
   width: 60px;
   height: 60px;
   background-size: contain;
@@ -475,7 +475,7 @@ main img {
 .lower-section section .cards .card2::after {
   position: absolute;
   content: "";
-  background: url(Images/yellow\ arrow\ in\ circle.svg);
+  background: url(../Images/yellow\ arrow\ in\ circle.svg);
   width: 60px;
   height: 60px;
   background-size: contain;
@@ -652,7 +652,7 @@ nav ul li a:hover {
   .What-makes-us-different::before {
     position: absolute;
     content: "";
-    background: url(Images/what\ makes\ us\ differernt\ -\ color\ collage.png) no-repeat;
+    background: url(../Images/what\ makes\ us\ differernt\ -\ color\ collage.png) no-repeat;
     width: 50%;
     height: 100%;
     background-size: cover;
@@ -692,7 +692,7 @@ nav ul li a:hover {
   .What-makes-us-different section .content::after {
     position: absolute;
     content: "";
-    background: url(Images/Weenter\ background.svg) no-repeat;
+    background: url(../Images/Weenter\ background.svg) no-repeat;
     height: 168px;
     width: 704px;
     right: -60%;
@@ -766,7 +766,7 @@ nav ul li a:hover {
   .lower-section::after {
     content: "";
     position: absolute;
-    background: url(Images/footer-background.png);
+    background: url(../Images/footer-background.png);
     width: 100%;
     height: 100%;
     bottom: 0;
